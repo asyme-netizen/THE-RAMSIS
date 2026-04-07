@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Profile — THE RAMSIS</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<div class="site-shell">
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="../index.html">THE RAMSIS</a>
+    <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-label="Open menu" data-mobile-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" data-site-nav>
+      <a href="../index.html">World</a>
+      <a href="./business.html">Business</a>
+      <a href="./politics.html">Politics</a>
+      <a href="./culture.html">Culture</a>
+      <a href="./tech.html">Tech</a>
+      <a href="./science.html">Science</a>
+      <a href="./opinion.html">Opinion</a>
+    </nav>
+    <div class="topbar-actions">
+      <label class="searchbox" aria-label="Search">
+        <span>⌕</span>
+        <input type="search" placeholder="Search archives...">
+      </label>
+      <button class="theme-toggle" type="button" aria-label="Toggle day and night mode" data-theme-toggle>
+        <span class="theme-toggle-sun">☀</span>
+        <span class="theme-toggle-moon">☾</span>
+      </button>
+      <a class="btn-accent auth-trigger" href="#" data-open-auth data-auth-view="signin"><span class="auth-dot"></span><span>Sign in</span></a><div class="account-pill" data-account-pill></div>
+    </div>
+  </div>
+</header>
+
+<main class="profile-shell" data-profile-shell>
+  <section class="container profile-hero">
+    <h1 class="page-title profile-page-title" data-profile-page-name>Profile</h1>
+  </section>
+
+  <section class="container profile-gate" data-profile-gate>
+    <h2>Sign in to open your reader profile</h2>
+    <p>Once you sign in, you can update your display name and profile photo from this page.</p>
+    <button class="btn-accent" type="button" data-inline-auth="signin">Open sign in</button>
+  </section>
+
+  <section class="container" data-profile-content hidden>
+    <div class="profile-grid">
+      <aside class="profile-card profile-avatar-card">
+        <div class="profile-kicker">Reader identity</div>
+        <div class="profile-avatar-frame">
+          <img src="" alt="Your profile photo" data-profile-preview-image hidden>
+          <span data-profile-preview-fallback>R</span>
+        </div>
+        <h2 class="profile-title" data-profile-heading-name>Reader</h2>
+        <p class="profile-intro">This is your public reader identity inside THE RAMSIS.</p>
+
+        <div class="profile-actions">
+          <label class="profile-upload-label" for="profilePhotoInput">Upload new photo</label>
+          <input class="profile-upload-input" id="profilePhotoInput" type="file" accept="image/*" data-profile-photo-input>
+          <button class="profile-secondary-btn" type="button" data-profile-remove-photo>Remove photo</button>
+        </div>
+      </aside>
+
+      <div class="profile-stack">
+        <section class="profile-card profile-summary-card">
+          <div class="section-header" style="margin-top:0;">
+            <h2 data-profile-quick-name>Reader</h2>
+          </div>
+          <p class="profile-intro" data-profile-quick-email>reader@theramsis.com</p>
+        </section>
+
+        <section class="profile-card" id="settings">
+          <div class="section-header" style="margin-top:0;">
+            <h2>Settings</h2>
+          </div>
+          <p class="profile-intro">Update your name and image here. The new look appears in the top bar across the site.</p>
+
+          <form class="profile-form-grid" data-profile-form>
+            <div class="profile-field">
+              <label for="profileDisplayName">Display name</label>
+              <input id="profileDisplayName" type="text" data-profile-name placeholder="Your display name">
+            </div>
+            <div class="profile-field">
+              <label for="profileEmail">Email</label>
+              <input id="profileEmail" type="email" data-profile-email readonly>
+            </div>
+            <button class="btn-accent profile-primary-btn" type="submit">Save profile changes</button>
+            <div class="profile-status" data-profile-status></div>
+          </form>
+        </section>
+
+        <section class="profile-card" id="subscriptions">
+          <div class="section-header" style="margin-top:0;">
+            <h2>My subscriptions</h2>
+          </div>
+          <p class="profile-intro">Your premium access is active after sign-in. This space is ready for subscription plans, saved editions, and billing history.</p>
+        </section>
+
+        <section class="profile-card" id="help">
+          <div class="section-header" style="margin-top:0;">
+            <h2>Help</h2>
+          </div>
+          <p class="profile-intro">Need support? Update your profile details here, or sign out and use Account switcher from the top bar to continue with another account.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a class="brand" href="../index.html">THE RAMSIS</a>
+      <nav class="footer-nav">
+        <a href="./business.html">Business</a>
+        <a href="./archive.html">Archives</a>
+        <a href="./about.html">Ethos Policy</a>
+        <a href="./about.html">Masthead</a>
+        <a href="#subscribe">Newsletters</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./about.html">Help</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      © <span data-year></span> THE RAMSIS. Architectural rigor in digital journalism.
+    </div>
+  </div>
+</footer>
+</div>
+<script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
