@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account — THE RAMSIS</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body class="auth-body">
+  <div class="auth-shell">
+    <section class="auth-account">
+      <a class="auth-brand" href="index.html">
+        <span class="auth-brand-badge">TR</span>
+        <span>The Ramsis</span>
+      </a>
+      <h1>Welcome, <span id="accountName">Reader</span></h1>
+      <div class="account-meta">
+        <div><strong>Email:</strong> <span id="accountEmail"></span></div>
+        <div><strong>Status:</strong> <span id="accountStatus"></span></div>
+      </div>
+      <div class="account-actions">
+        <a class="auth-btn auth-btn-primary" href="index.html">Go to homepage</a>
+        <button id="logoutBtn" class="auth-btn auth-btn-primary" type="button">Logout</button>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="assets/js/account.js"></script>
+</body>
+</html>
