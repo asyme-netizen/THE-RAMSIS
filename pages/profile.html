@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Profile — THE RAMSIS</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<div class="site-shell">
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="../index.html">THE RAMSIS</a>
+    <nav class="nav">
+      <a href="../index.html">World</a>
+      <a href="../pages/politics.html">Politics</a>
+      <a href="../pages/culture.html">Culture</a>
+      <a href="../pages/tech.html">Tech</a>
+      <a href="../pages/science.html">Science</a>
+      <a href="../pages/opinion.html">Opinion</a>
+    </nav>
+    <div class="topbar-actions">
+      <label class="searchbox" aria-label="Search">
+        <span>⌕</span>
+        <input type="search" placeholder="Search archives...">
+      </label>
+      <a class="btn-accent auth-trigger" href="#" data-open-auth data-auth-view="signin"><span class="auth-dot"></span><span>Sign in</span></a>
+      <div class="account-pill" data-account-pill></div>
+    </div>
+  </div>
+</header>
+
+<main class="profile-shell" data-profile-shell>
+  <section class="container">
+    <div class="kicker-row"><span class="kicker-pill">Account</span><span>Reader profile</span></div>
+    <h1 class="page-title" style="font-size:clamp(2.6rem,6vw,4.8rem);max-width:760px;">Your profile, refined like a global news account.</h1>
+  </section>
+
+  <section class="container profile-gate" data-profile-gate>
+    <h2>Sign in to open your reader profile</h2>
+    <p>Once you sign in, you can update your display name and profile photo from this page.</p>
+    <button class="btn-accent" type="button" data-inline-auth="signin">Open sign in</button>
+  </section>
+
+  <section class="container" data-profile-content hidden>
+    <div class="profile-grid">
+      <aside class="profile-card profile-avatar-card">
+        <div class="profile-kicker">Reader identity</div>
+        <div class="profile-avatar-frame">
+          <img src="" alt="Your profile photo" data-profile-preview-image hidden>
+          <span data-profile-preview-fallback>R</span>
+        </div>
+        <h2 class="profile-title" data-profile-heading-name>Reader</h2>
+        <p class="profile-intro">This is your public reader identity inside THE RAMSIS.</p>
+
+        <div class="profile-actions">
+          <label class="profile-upload-label" for="profilePhotoInput">Upload new photo</label>
+          <input class="profile-upload-input" id="profilePhotoInput" type="file" accept="image/*" data-profile-photo-input>
+          <button class="profile-secondary-btn" type="button" data-profile-remove-photo>Remove photo</button>
+        </div>
+      </aside>
+
+      <section class="profile-card">
+        <div class="section-header" style="margin-top:0;">
+          <h2>Profile settings</h2>
+        </div>
+        <p class="profile-intro">Update your name and image here. The new look appears in the top bar across the site.</p>
+
+        <form class="profile-form-grid" data-profile-form>
+          <div class="profile-field">
+            <label for="profileDisplayName">Display name</label>
+            <input id="profileDisplayName" type="text" data-profile-name placeholder="Your display name">
+          </div>
+          <div class="profile-field">
+            <label for="profileEmail">Email</label>
+            <input id="profileEmail" type="email" data-profile-email readonly>
+          </div>
+          <button class="btn-accent profile-primary-btn" type="submit">Save profile changes</button>
+          <div class="profile-status" data-profile-status></div>
+        </form>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a class="brand" href="../index.html">THE RAMSIS</a>
+      <nav class="footer-nav">
+        <a href="../pages/archive.html">Archives</a>
+        <a href="../pages/about.html">Ethos Policy</a>
+        <a href="../pages/about.html">Masthead</a>
+        <a href="../index.html#subscribe">Newsletters</a>
+        <a href="../pages/profile.html">Profile</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      © <span data-year></span> THE RAMSIS. Architectural rigor in digital journalism.
+    </div>
+  </div>
+</footer>
+</div>
+<script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
