@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
         provider.setCustomParameters({ prompt: "select_account" });
         await signInWithPopup(auth, provider);
         closeAuth();
-      catch (error) {
+      } catch (error) {
   let message = "Something went wrong";
 
   if (error.code === "auth/email-already-in-use") {
