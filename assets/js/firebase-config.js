@@ -15,8 +15,8 @@ export const marketDataConfig = {
 };
 
 export const newsDataConfig = {
-  gnewsApiKey: "PASTE_YOUR_GNEWS_API_KEY",
-  newsApiKey: "PASTE_YOUR_NEWSAPI_KEY"
+  gnewsApiKey: "576675312004e463257aa572bb745901",
+  newsApiKey: "ede8a1d242634eddaba83ac718bf1265"
 };
 
 export const siteMonetizationConfig = {
