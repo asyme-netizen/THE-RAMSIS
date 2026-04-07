@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — THE RAMSIS</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/auth.css">
+</head>
+<body class="auth-body" data-auth-page="guest-only">
+  <div class="auth-shell">
+    <div class="auth-wrap">
+      <section class="auth-left">
+        <a class="auth-brand" href="./index.html">
+          <span class="auth-brand-badge">TR</span>
+          <span>The Ramsis</span>
+        </a>
+
+        <div class="auth-chip">Create your Ramsis account</div>
+        <h1 class="auth-title">Create account</h1>
+        <p class="auth-copy">Set up your account to save your reading journey and access member-ready experiences later.</p>
+
+        <form id="signupForm" class="auth-form">
+          <div class="auth-grid-two">
+            <div class="field">
+              <label for="firstName">First name</label>
+              <input id="firstName" type="text" placeholder="First name" required>
+            </div>
+            <div class="field">
+              <label for="lastName">Last name</label>
+              <input id="lastName" type="text" placeholder="Last name" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="name@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="At least 6 characters" required>
+          </div>
+
+          <div class="field">
+            <label for="confirmPassword">Confirm password</label>
+            <input id="confirmPassword" type="password" placeholder="Repeat your password" required>
+          </div>
+
+          <button class="auth-btn auth-btn-primary" type="submit">Create Account</button>
+          <div id="authStatus" class="auth-status"></div>
+          <p class="auth-helper">Already have an account? <a class="auth-link" href="./signin.html">Sign in</a></p>
+        </form>
+      </section>
+
+      <aside class="auth-right">
+        <div class="promo-card">
+          <div class="promo-chip">Account-ready editorial access</div>
+          <h2 class="promo-title">Begin your Ramsis profile.</h2>
+          <p class="promo-copy">Create your account now. Google sign-in can be added later without changing this design.</p>
+          <div class="promo-orb"><div class="promo-smile"></div></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script type="module" src="./assets/js/auth.js"></script>
+</body>
+</html>
