@@ -223,9 +223,25 @@ document.addEventListener("DOMContentLoaded", () => {
         provider.setCustomParameters({ prompt: "select_account" });
         await signInWithPopup(auth, provider);
         closeAuth();
-      } catch (error) {
-        setMessage(activeTab, error.message, "error");
-      }
+      catch (error) {
+  let message = "Something went wrong";
+
+  if (error.code === "auth/email-already-in-use") {
+    message = "This email is already registered";
+  } else if (error.code === "auth/invalid-email") {
+    message = "Invalid email format";
+  } else if (error.code === "auth/weak-password") {
+    message = "Password must be at least 6 characters";
+  } else if (error.code === "auth/user-not-found") {
+    message = "No account found with this email";
+  } else if (error.code === "auth/wrong-password") {
+    message = "Incorrect password";
+  } else {
+    message = error.message; // fallback
+  }
+
+  setMessage(activeTab, message, "error");
+}
     });
   });
 
